@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.natalie.myapplication.MainActivity">
+
+    <Button
+        android:text="Butts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickFunc" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gob"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:id="@+id/myStupidGBP"
+        android:hint="0.00"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/myStupidGBP"
+        android:layout_alignStart="@+id/myStupidGBP"
+        android:id="@+id/convertTo"
+        android:hint="XXX" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="GBP"
+        android:ems="10"
+        android:id="@+id/baseCurrency"
+        android:width="50dp"
+        android:layout_alignBaseline="@+id/myStupidGBP"
+        android:layout_alignBottom="@+id/myStupidGBP"
+        android:layout_toRightOf="@+id/myStupidGBP"
+        android:layout_toEndOf="@+id/myStupidGBP" />
+
+</RelativeLayout>
